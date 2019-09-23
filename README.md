@@ -29,6 +29,7 @@ Abra o navegador Firefox Azul e coloque: http://localhost/login
 ---
 
 ## Editar utilizando o VSCode
+Abrir a pasta c:\xampp\htdocs\login.
 
 ---
 
