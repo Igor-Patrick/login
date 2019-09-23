@@ -6,6 +6,7 @@ Copie e cole a linha abaixo - selecione e pressione as teclas **Ctrl C**
 
 Pressione Enter
 
+---
 
-### login
+## login
 Sistema de Login em PHP e JavaScript.
