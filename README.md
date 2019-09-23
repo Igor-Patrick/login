@@ -33,5 +33,10 @@ Abrir a pasta c:\xampp\htdocs\login.
 
 ---
 
-## login
+# login
 Sistema de Login em PHP e JavaScript.
+
+# aula01 - 23/09/2019
+OBS: Começou a Primavera :sunflower: 
+Aula inicial, configuração do projeto GitHub.
+E criação do passo a passo.
