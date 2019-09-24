@@ -1,3 +1,16 @@
+# login
+Sistema de Login em PHP e JavaScript.
+
+# aula02 - 24/09/2019
+Iniciando a aula.
+
+# aula01 - 23/09/2019
+OBS: Começou a Primavera :sunflower: 
+Aula inicial, configuração do projeto GitHub.
+E criação do passo a passo.
+
+---
+
 # Habilitar o Proxy
 Tecla *Windows* - Abrir a janela Prompt de Comando
 Copie e cole a linha abaixo - selecione e pressione as teclas **Ctrl C**
@@ -30,16 +43,3 @@ Abra o navegador Firefox Azul e coloque: http://localhost/login
 
 ## Editar utilizando o VSCode
 Abrir a pasta c:\xampp\htdocs\login.
-
----
-
-# login
-Sistema de Login em PHP e JavaScript.
-
-# aula01 - 23/09/2019
-OBS: Começou a Primavera :sunflower: 
-Aula inicial, configuração do projeto GitHub.
-E criação do passo a passo.
-
-# aula02 - 24/09/2019
-Iniciando a aula.
