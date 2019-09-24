@@ -40,3 +40,6 @@ Sistema de Login em PHP e JavaScript.
 OBS: Começou a Primavera :sunflower: 
 Aula inicial, configuração do projeto GitHub.
 E criação do passo a passo.
+
+# aula02 - 24/09/2019
+Iniciando a aula.
