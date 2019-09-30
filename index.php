@@ -118,23 +118,32 @@ Abra a URL http://localhost/login no navegador -->
                 <form action="#" method="post" class="p-2" id="formRegistro">
 
                     <div class="form-group">
-                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" 
-                        placeholder="Nome Completo">
+                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome Completo">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control" 
-                        placeholder="Nome de Usuário">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control" placeholder="Nome de Usuário">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" 
-                        placeholder="E-mail">
+                        <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" placeholder="E-mail">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control"
-                        placeholder="Senha">
+                        <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="Senha">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="senhaUsuarioConfirmar" id="senhaUsuarioConfirmar" class="form-control" placeholder="Confirmar a senha">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="concordar" id="concordar" class="custom-control-input">
+                            <label for="concordar" class="custom-control-label">
+                                Eu concordo com <a href="#">os termos e condições.</a>
+                            </label>
+                        </div>
                     </div>
 
                 </form>
