@@ -10,8 +10,8 @@ Abra a URL http://localhost/login no navegador -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title>Sistema de Login</title>
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
     <style>
         #alerta,
         #caixaSenha,
@@ -124,7 +124,7 @@ Abra a URL http://localhost/login no navegador -->
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control" placeholder="Nome de Usuário" required minlength="5">
+                        <input type="text" name="nomeDoUsuario" id="nomeDoUsuario" class="form-control" placeholder="Nome de Usuário" required minlength="5">
                     </div>
 
                     <div class="form-group">
@@ -140,7 +140,7 @@ Abra a URL http://localhost/login no navegador -->
                     </div>
 
                     <div class="form-group">
-                        <div class="custom-control custom-checkbox">
+                        <div class="custom-control custom-checkbox mt-4">
                             <input type="checkbox" name="concordar" id="concordar" class="custom-control-input">
                             <label for="concordar" class="custom-control-label">
                                 Eu concordo com <a href="#">os termos e condições.</a>
@@ -174,26 +174,39 @@ Abra a URL http://localhost/login no navegador -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <!-- Código jQuery para mostrar e ocultar os formulários -->
     <script>
-    $(function() {
+        $(function() {
 
-    $("#btnEsqueci").click(function() {
-    $("#caixaLogin").hide(); //Ocultar
-    $("#caixaSenha").show(); //mostrar
-    });
-    $("#btnRegistrarNovo").click(function() {
-    $("#caixaLogin").hide(); //Ocultar
-    $("#caixaRegistro").show(); //mostrar
-    });
-    $("#btnJaRegistrado").click(function() {
-    $("#caixaSenha").hide();
-    $("#caixaLogin").show(); //mostrar
-    });
-    $("#btnJaRegistrado2").click(function() {
-    $("#caixaRegistro").hide();
-    $("#caixaLogin").show(); //mostrar
-    });
+            //Validação de Formulários
+            jQuery.validator.setDefaults({
+                success: "valid"
+            });
+            $("#formRegistro").validate({
+                rules: {
+                    senhaDoUsuario: "required",
+                    senhaUsuarioConfirmar: {
+                        equalTo: "#senhaDoUsuario"
+                    }
+                }
+            });
+            //Mostrar e Ocultar Formulários
+            $("#btnEsqueci").click(function() {
+                $("#caixaLogin").hide(); //Ocultar
+                $("#caixaSenha").show(); //mostrar
+            });
+            $("#btnRegistrarNovo").click(function() {
+                $("#caixaLogin").hide(); //Ocultar
+                $("#caixaRegistro").show(); //mostrar
+            });
+            $("#btnJaRegistrado").click(function() {
+                $("#caixaSenha").hide();
+                $("#caixaLogin").show(); //mostrar
+            });
+            $("#btnJaRegistrado2").click(function() {
+                $("#caixaRegistro").hide();
+                $("#caixaLogin").show(); //mostrar
+            });
 
-    });
+        });
     </script>
 </body>
 
