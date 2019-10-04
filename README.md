@@ -1,5 +1,16 @@
+# Habilitar o Proxy
+Tecla *Windows* - Abrir a janela Prompt de Comando
+Copie e cole a linha abaixo - selecione e pressione as teclas **Ctrl C**
+:open_mouth:
+## git config --global http.proxy http://10.1.21.254:3128
+
+Pressione Enter.
+
+---
 # login
 Sistema de Login em PHP e JavaScript.
+
+# aula05 - 04/10/2019
 
 # aula04 - 01/10/2019
 - Validação com HTML5
@@ -21,16 +32,6 @@ Layout Bootstrap para os formulários
 OBS: Começou a Primavera :sunflower: 
 Aula inicial, configuração do projeto GitHub.
 E criação do passo a passo.
-
----
-
-# Habilitar o Proxy
-Tecla *Windows* - Abrir a janela Prompt de Comando
-Copie e cole a linha abaixo - selecione e pressione as teclas **Ctrl C**
-:open_mouth:
-## git config --global http.proxy http://10.1.21.254:3128
-
-Pressione Enter.
 
 ---
 
