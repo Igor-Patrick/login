@@ -11,6 +11,7 @@ Pressione Enter.
 Sistema de Login em PHP e JavaScript.
 
 # aula05 - 04/10/2019
+- Envio de dados do Front-End para o Back-End, métodos e GET e POST.
 
 # aula04 - 01/10/2019
 - Validação com HTML5
