@@ -50,7 +50,7 @@ Abra a URL http://localhost/login no navegador -->
                     </div>
 
                     <div class="form-group">
-                        <div class="custom-control custom-checkbox mt-4">
+                        <div class="custom-control custom-checkbox mt-5">
 
                             <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
                             <label for="lembrar" class="custom-control-label">
@@ -209,6 +209,22 @@ Abra a URL http://localhost/login no navegador -->
                 $("#caixaLogin").show(); //mostrar
             });
 
+            //Cadastro de novo usuário.
+            $("#btnRegistrar").click(function(e) {
+                if(document.querySelector("#formRegistro").checkValidity()){
+                    e.preventDefault();//Não abrir outra página
+                    //Envio dos dados via Ajax
+                    $.ajax();
+                }
+            });
+            //Login.
+            $("#btnEntrar").click(function(e) {
+
+            });
+            //Recuperação de Senha.
+            $("#btnGerar").click(function(e) {
+
+            });
         });
         /*
          * Translated default messages for the jQuery validation plugin.
