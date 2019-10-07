@@ -27,7 +27,7 @@ Abra a URL http://localhost/login no navegador -->
             <div class="col-lg-4 offset-lg-4" id="alerta">
                 <div class="alert alert-success text-center">
                     <strong class="resultado">
-                        Alo Ha Tchurmaaaa
+                        ALOHAAAA TCHURMAAAAAAA!
                     </strong>
                 </div>
             </div>
@@ -211,11 +211,20 @@ Abra a URL http://localhost/login no navegador -->
 
             //Cadastro de novo usuário.
             $("#btnRegistrar").click(function(e) {
-                if(document.querySelector("#formRegistro").checkValidity()){
-                    e.preventDefault();//Não abrir outra página
+                if (document.querySelector("#formRegistro").checkValidity()) {
+                    e.preventDefault(); //Não abrir outra página
                     //Envio dos dados via Ajax
-                    $.ajax();
+                    $.ajax({
+                        url: 'recebe_dados.php',
+                        method: 'post',
+                        data: $("#formRegistro").serialize() + '&action=cadastro',
+                        success: function(resposta) {
+                            $("#alerta").show();
+                            $(".resultado").html(resposta);
+                        }
+                    });
                 }
+                return true;
             });
             //Login.
             $("#btnEntrar").click(function(e) {
