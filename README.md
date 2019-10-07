@@ -10,7 +10,10 @@ Pressione Enter.
 # login
 Sistema de Login em PHP e JavaScript.
 
-# aula05 - 04/10/2019
+# aula05 - 07/10/2019
+- 
+
+# aulaParalela - 04/10/2019
 - Envio de dados do Front-End para o Back-End, métodos e GET e POST.
 
 # aula04 - 01/10/2019
