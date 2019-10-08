@@ -10,8 +10,11 @@ Pressione Enter.
 # login
 Sistema de Login em PHP e JavaScript.
 
+# aula06 - 08/10/2019
+- Início da aula.
+
 # aula05 - 07/10/2019
-- 
+- Envio de Dados via Ajax e BD.
 
 # aulaParalela - 04/10/2019
 - Envio de dados do Front-End para o Back-End, métodos e GET e POST.
