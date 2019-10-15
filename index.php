@@ -209,10 +209,12 @@ Abra a URL http://localhost/login no navegador -->
                 $("#caixaLogin").show(); //mostrar
             });
 
-            //Cadastro de novo usuário.
+            //Cadastro de novo usuário
             $("#btnRegistrar").click(function(e) {
-                if (document.querySelector("#formRegistro").checkValidity()) {
-                    e.preventDefault(); //Não abrir outra página
+                if (document
+                    .querySelector("#formRegistro")
+                    .checkValidity()) {
+                    e.preventDefault(); //Não abrir outra págin
                     //Envio dos dados via Ajax
                     $.ajax({
                         url: 'recebe_dados.php',
@@ -226,10 +228,12 @@ Abra a URL http://localhost/login no navegador -->
                 }
                 return true;
             });
-            //Login.
+            //Login
             $("#btnEntrar").click(function(e) {
-                if (document.querySelector("#formLogin").checkValidity()) {
-                    e.preventDefault(); //Não abrir outra página
+                if (document
+                    .querySelector("#formLogin")
+                    .checkValidity()) {
+                    e.preventDefault(); //Não abrir outra págin
                     //Envio dos dados via Ajax
                     $.ajax({
                         url: 'recebe_dados.php',
@@ -243,10 +247,12 @@ Abra a URL http://localhost/login no navegador -->
                 }
                 return true;
             });
-            //Recuperação de Senha.
+            //Recuperação de senha
             $("#btnGerar").click(function(e) {
-                if (document.querySelector("#formSenha").checkValidity()) {
-                    e.preventDefault(); //Não abrir outra página
+                if (document
+                    .querySelector("#formSenha")
+                    .checkValidity()) {
+                    e.preventDefault(); //Não abrir outra págin
                     //Envio dos dados via Ajax
                     $.ajax({
                         url: 'recebe_dados.php',
