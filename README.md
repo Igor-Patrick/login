@@ -10,6 +10,9 @@ Pressione Enter.
 # login
 Sistema de Login em PHP e JavaScript.
 
+# aula07 - 15/10/2019
+- BD
+
 # aula06 - 08/10/2019
 - Início da aula.
 
