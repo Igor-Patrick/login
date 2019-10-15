@@ -10,11 +10,8 @@ Pressione Enter.
 # login
 Sistema de Login em PHP e JavaScript.
 
-# aula07 - 15/10/2019
-- BD
-
-# aula06 - 08/10/2019
-- Início da aula.
+# aula06 - 15/10/2019 👨‍🏫 Dia do Professor!
+- Persistência de dados no banco de dados.
 
 # aula05 - 07/10/2019
 - Envio de Dados via Ajax e BD.
@@ -67,3 +64,12 @@ Abra o navegador Firefox Azul e coloque: http://localhost/login
 
 ## Editar utilizando o VSCode
 Abrir a pasta c:\xampp\htdocs\login.
+
+---
+
+## Importar o banco de dados
+- Acessar no navegador: http://localhost/phpmyadmin
+- Clicar em importar;
+- Selecionar o arquivo, clicando em Browse/Escolha o arquivo...;
+- Abra o arquivo 127.0.0.1.sql e clique em executar;
+- Verificar se apareceu 'senai'ao lado.
