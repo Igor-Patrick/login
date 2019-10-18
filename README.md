@@ -10,8 +10,11 @@ Pressione Enter.
 # login
 Sistema de Login em PHP e JavaScript.
 
+# aula07 - 18/10/2019
+- OIE
+
 # aula06 - 15/10/2019 👨‍🏫 Dia do Professor!
-- Persistência de dados no banco de dados.
+- Persistência de dados no banco dse dados.
 
 # aula05 - 07/10/2019
 - Envio de Dados via Ajax e BD.
