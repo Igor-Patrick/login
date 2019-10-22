@@ -11,7 +11,8 @@ Pressione Enter.
 Sistema de Login em PHP e JavaScript.
 
 # aula08 - 21/10/2019
-- OIEE
+- Autenticação do usuário e permissão de acesso ao perfil.php;
+- Conceito de sessão.
 
 # aula07 - 18/10/2019
 - OIE

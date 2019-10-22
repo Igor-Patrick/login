@@ -1,3 +1,6 @@
+<?php
+require_once "session.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -37,7 +40,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Sobre</a>
                         <a class="dropdown-item" href="#">Fotos</a>
-                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="sair.php">Sair</a>
                     </div>
                 </li>
             </ul>
