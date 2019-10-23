@@ -42,17 +42,20 @@ Abra a URL http://localhost/login no navegador -->
                 <form action="#" method="post" class="p-2" id="formLogin">
 
                     <div class="form-group">
-                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário" class="form-control" required minlength="5">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário" class="form-control" 
+                        required minlength="5" value="<?= isset($_COOKIE['nomeDoUsuario'])?$_COOKIE['nomeDoUsuario']: "";?>">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6">
+                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" 
+                        required minlength="6" value="<?= isset($_COOKIE['senhaDoUsuario'])?$_COOKIE['senhaDoUsuario']: "";?>">
                     </div>
 
                     <div class="form-group">
                         <div class="custom-control custom-checkbox mt-5">
 
-                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
+                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input" 
+                            <?= isset($_COOKIE['senhaDoUsuario'])?" checked":"";?>>
                             <label for="lembrar" class="custom-control-label">
                                 Lembrar de mim.
                             </label>
@@ -79,6 +82,7 @@ Abra a URL http://localhost/login no navegador -->
             </div>
         </section>
         <!-- Final da Seção de Login -->
+
         <!-- Formulário de Recuperação de Senha -->
         <section class="row mt-5">
             <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaSenha">
@@ -241,7 +245,7 @@ Abra a URL http://localhost/login no navegador -->
                         data: $("#formLogin").serialize() + '&action=login',
                         success: function(resposta) {
                             $("#alerta").show();
-                            if (resposta === "ok") {
+                            if (resposta === "ok"){
                                 window.location = "perfil.php";
                             } else {
                                 $(".resultado").html(resposta);

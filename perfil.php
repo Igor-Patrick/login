@@ -31,11 +31,11 @@ require_once "session.php";
                     <a class="nav-link" href="#">Destaques</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Perfil</a>
+                    <a class="nav-link" href="#">Preços</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Link dropdown
+                        <?= $nomeDoUsuario ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Sobre</a>
@@ -47,12 +47,13 @@ require_once "session.php";
         </div>
     </nav>
     <!-- Fim da barra de navegação -->
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Boas vindas!</h1>
-            <h2 class="display-2 text-center bg-info text-light rounded p-1">Nome Completo</h2>
-            <h2 class="text-center">E-mail do Usuário</h2>
-            <h2 class="text-center">Registrado em: 18/10/2019</h2>
+            <h2 class="display-2 text-center bg-info text-light rounded p-2"><?= $nomeCompleto ?></h2>
+            <h2 class="text-center">E-mail do Usuário: <a href="mailto:<?= $emailUsuario ?>"><?= $emailUsuario?></a></h2>
+            <h2 class="text-center">Registrado em: <?= $dataCriado ?></h2>
         </div>
     </div>
 

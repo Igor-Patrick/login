@@ -34,7 +34,7 @@ USE `senai`;
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `idUsuario` int(10) UNSIGNED NOT NULL PRIMARY KEY auto_increment,
-  `NomeCompleto` varchar(100) NOT NULL,
+  `nomeCompleto` varchar(100) NOT NULL,
   `nomeDoUsuario` varchar(45) NOT NULL,
   `emailUsuario` varchar(45) NOT NULL,
   `senhaDoUsuario` char(40) NOT NULL,
