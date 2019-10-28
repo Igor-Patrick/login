@@ -11,6 +11,9 @@ Pressione Enter.
 # login
 Sistema de Login em PHP e JavaScript.
 
+# aula10 - 28/10/2019
+- OPA.
+
 # aula09 - 22/10/2019
 - ARDUÍNO.
 
