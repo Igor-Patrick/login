@@ -31,7 +31,7 @@ require_once "session.php";
                     <a class="nav-link" href="#">Destaques</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Preços</a>
+                    <a class="nav-link" href="fotos.php">Fotos</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,8 +52,15 @@ require_once "session.php";
         <div class="container">
             <h1 class="display-4">Boas vindas!</h1>
             <h2 class="display-2 text-center bg-info text-light rounded p-2"><?= $nomeCompleto ?></h2>
-            <h2 class="text-center">E-mail do Usuário: <a href="mailto:<?= $emailUsuario ?>"><?= $emailUsuario?></a></h2>
-            <h2 class="text-center">Registrado em: <?= $dataCriado ?></h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="<?= $urlDePerfil?>" width="300px" alt="foto de perfil">
+                </div>
+                <div class="col-8">
+                    <h2 class="text-center">E-mail do Usuário: <a href="mailto:<?= $emailUsuario ?>"><?= $emailUsuario?></a></h2>
+                    <h2 class="text-center">Registrado em: <?= $dataCriado ?></h2>
+                </div>
+            </div>
         </div>
     </div>
 

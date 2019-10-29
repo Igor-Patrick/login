@@ -14,8 +14,8 @@ if(isset($_SESSION['nomeDoUsuario'])){
     $nomeDoUsuario = $linha['nomeDoUsuario'];
     $nomeCompleto = $linha['nomeCompleto'];
     $emailUsuario = $linha['emailUsuario'];
+    $urlDePerfil = $linha['urlDePerfil'];
     $dataCriado = $linha['dataCriado'];
-
     // Conversão de data
     $dataCriado = date('d/m/Y', strtotime($dataCriado));
 

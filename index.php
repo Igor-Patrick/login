@@ -143,7 +143,7 @@ Abra a URL http://localhost/login no navegador -->
                     </div>
 
                     <div class="form-group">
-                        <input type="url" name="fotoDePerfil" id="fotoDePerfil" class="form-control" placeholder="Url de perfil..." required>
+                        <input type="url" name="urlDePerfil" id="urlDePerfil" class="form-control" placeholder="Url de perfil..." required>
                     </div>
 
                     <div class="form-group">

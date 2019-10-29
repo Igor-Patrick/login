@@ -23,6 +23,7 @@ if(isset($_POST['action'])){
         $nomeCompleto = verificar_entrada($_POST['nomeCompleto']);
         $nomeDoUsuario = verificar_entrada($_POST['nomeDoUsuario']);
         $emailUsuario = verificar_entrada($_POST['emailUsuario']);
+        $urlDePerfil = verificar_entrada($_POST['urlDePerfil']);
         $senhaDoUsuario = verificar_entrada($_POST['senhaDoUsuario']);
         $senhaUsuarioConfirmar = verificar_entrada($_POST['senhaUsuarioConfirmar']);
         $dataCriado = date("Y-m-d");//Data atual no formato banco de dados.
@@ -54,8 +55,8 @@ if(isset($_POST['action'])){
                 echo "<p class='text-danger'>E-mail indisponível, tente outro.</p>";
             }else{
                 //Usuário pode ser cadastrado no banco de dados.
-                $sql = $connect->prepare("INSERT into usuario (nomeDoUsuario, nomeCompleto, emailUsuario, senhaDoUsuario, dataCriado) values(?, ?, ?, ?, ?)");
-                $sql->bind_param("sssss", $nomeDoUsuario, $nomeCompleto, $emailUsuario, $senhaCodificada, $dataCriado);
+                $sql = $connect->prepare("INSERT into usuario (nomeDoUsuario, nomeCompleto, urlDePerfil, emailUsuario, senhaDoUsuario, dataCriado) values(?, ?, ?, ?, ?, ?)");
+                $sql->bind_param("ssssss", $nomeDoUsuario, $nomeCompleto, $urlDePerfil, $emailUsuario, $senhaCodificada, $dataCriado);
                 if($sql->execute()){
                     echo "<p class='text-success'>Usuário cadastrado</p>";
                 }else{
