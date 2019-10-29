@@ -1,3 +1,6 @@
+<?php
+require_once "session.php";
+?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -12,26 +15,28 @@
 </head>
 <body>
     <!-- Carrossel -->
+<div class="container mt-3">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="imagens/aranha.jpg" alt="Primeiro Slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="imagens/aranha.jpg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagens/pacoca.jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagens/sol.jpg" alt="Terceiro Slide">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="imagens/pacoca.jpg" alt="Segundo Slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="imagens/sol.jpg" alt="Terceiro Slide">
-        </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
     </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
 </div>
     <!-- Carrossel -->
 
