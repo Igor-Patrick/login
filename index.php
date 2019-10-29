@@ -15,7 +15,7 @@ Abra a URL http://localhost/login no navegador -->
     <style>
         #alerta,
         #caixaSenha,
-        #caixaRegistro {
+        #caixaRegistro, #caixaNovo {
             display: none;
         }
     </style>
@@ -74,6 +74,13 @@ Abra a URL http://localhost/login no navegador -->
                         <p class="text-center">
                             Novo usuário? <a href="#" id="btnRegistrarNovo">
                                 Registre-se aqui!
+                            </a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p class="text-center">
+                            <a href="#" id="btnMostrarMais">
+                                Mostrar
                             </a>
                         </p>
                     </div>
@@ -136,6 +143,10 @@ Abra a URL http://localhost/login no navegador -->
                     </div>
 
                     <div class="form-group">
+                        <input type="url" name="fotoDePerfil" id="fotoDePerfil" class="form-control" placeholder="Url de perfil..." required>
+                    </div>
+
+                    <div class="form-group">
                         <input type="password" name="senhaDoUsuario" id="senhaDoUsuario" class="form-control" placeholder="Senha" required minlength="6">
                     </div>
 
@@ -168,6 +179,62 @@ Abra a URL http://localhost/login no navegador -->
             </div>
         </section>
         <!-- Final do formulário de cadastro de novos usuários -->
+
+        <!-- Formulário novo -->
+        <section class="row">
+        <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaNovo">
+            <h2 class="text-center mt-2">
+                    Novo formulario
+            </h2>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" name="nomeCompletoNovo" id="nomeCompletoNovo" class="form-control" placeholder="Nome completo...">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="emailNovo" id="emailNovo" class="form-control" placeholder="E-mail...">
+                </div>
+                <div class="form-group">
+                    <label for="dataDeAniver">Data de Aniversário</label>
+                    <input type="date" name="dataDeAniver" id="dataDeAniver" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="url" name="redeSocial" id="redeSocial" class="form-control" placeholder="Url da rede social...">
+                </div>
+                <div class="form-group">
+                    <input type="url" name="fotoNovo" id="fotoNovo" class="form-control" placeholder="Url de imagem...">
+                </div>
+                <div class="form-group">
+                    <label for="selectEstado">Estado</label>
+                    <select name="selectEstado" id="selectEstado" class="form-control">
+                        <option value="parana">Paraná</option>
+                        <option value="santaCatarina">Santa Catarina</option>
+                        <option value="rioGrandeDoSul">Rio Grande do Sul</option>  
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="selectCidade">Cidade</label>
+                    <select name="selectCidade" id="selectCidade" class="form-control">
+                        <option value="guabiruba">Guabiruba</option>
+                        <option value="itajai">Itajaí</option>
+                        <option value="blumenau">Blumenau</option> 
+                        <option value="novaTrento">Nova Trento</option>  
+                        <option value="gaspar">Gaspar</option>   
+                    </select>
+                </div>
+                <div class="form-group">
+                        <input type="submit" value="Entrar" class="btn btn-primary btn-block" id="btnEntrarNovo" name="btnEntrarNovo">
+                </div>
+                <div class="form-group">
+                        <p class="text-center">
+                        Já registrado? <a href="#" id="btnJaRegistrado3">
+                            Entrar por aqui!
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        </section>
+        <!-- Final do formulário novo -->
     </main>
 
     <!-- Optional JavaScript -->
@@ -212,6 +279,15 @@ Abra a URL http://localhost/login no navegador -->
                 $("#caixaRegistro").hide();
                 $("#caixaLogin").show(); //mostrar
             });
+            $("#btnMostrarMais").click(function() {
+                $("#caixaLogin").hide();
+                $("#caixaNovo").show(); //mostrar
+            });
+            $("#btnJaRegistrado3").click(function() {
+                $("#caixaNovo").hide();
+                $("#caixaLogin").show(); //mostrar
+            });
+            
 
             //Cadastro de novo usuário
             $("#btnRegistrar").click(function(e) {
